@@ -11,3 +11,10 @@ terraform {
 provider "aws" {
   region = "eu-north-1"
 }
+
+#ha
+
+
+data "aws_availability_zones" "available" {
+  state = "available"
+}
